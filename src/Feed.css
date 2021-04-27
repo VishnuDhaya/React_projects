@@ -1,0 +1,25 @@
+.div_2, .div_3
+{
+    width:40%;
+}
+.div_1
+{
+    padding-top: 100px;
+}
+.card_div
+{
+    max-width: 25rem;
+    padding:0px !important;
+    margin-left:50px;
+    float:right;
+    box-shadow: 5px 10px 20px solid black;
+}
+.m1
+{
+    vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 40px;
+}
