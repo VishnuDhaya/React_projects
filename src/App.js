@@ -13,7 +13,7 @@ import Feed from './Feed';
 import Header from './Header';
 import Contact from './Contact';
 function App() {
-  //const [fname,setName] = useState("vishnu");
+  //const [fname,setName] = useState("vishnu"); test
 
   return (
     <Router>
