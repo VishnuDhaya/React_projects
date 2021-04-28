@@ -5,6 +5,8 @@ export default function Login(){
       const [email,setEmail]=useState('');
       const [password,setPassword]=useState('');
       const infro=()=>{
+        alert(email);
+        alert(password);
       const data = { "email": email,"password": password};
       const res=axios.post('https://reqres.in/api/login',data//{"email": "eve.holt@reqres.in","password": "cityslicka"}
       )
