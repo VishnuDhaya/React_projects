@@ -36,7 +36,7 @@ export default function Login(){
     return(
         
       <div className="log-form d1">
-       <h3>LOGIN</h3>
+       &nbsp;&nbsp;<h3>LOGIN</h3>
   <form>
     <input type="email" title="email" name="email"  placeholder="E-mail" onChange={(e)=>setEmail(e.target.value)}/><br/><br/>
     <input type="password" title="password" name="password"  placeholder="password" onChange={(e)=>setPassword(e.target.value)} /><br/><br/>

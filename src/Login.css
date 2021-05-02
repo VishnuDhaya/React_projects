@@ -1,6 +1,8 @@
 .d1{
-    background-color:lightcoral!important;
-    box-shadow: 5px 15px solid rgb(15, 1, 1);
+    background-color:rgb(245, 211, 151)!important;
+    box-shadow: 5px 10px solid black;
+    margin-top: 100px;
+    border-radius: 25px;
 }
 .b1
 {
