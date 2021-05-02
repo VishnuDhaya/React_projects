@@ -1,19 +1,21 @@
-import React, {useState} from 'react';
+import React, {useState,useContext} from 'react';
 import './Login.css';
 import axios from 'axios';
 import {useHistory} from 'react-router-dom';
+import UserContext from './UserContext';
 export default function Login(){
+      const user=useContext(UserContext);
       let history=useHistory();
+
       const [email,setEmail]=useState('');
       const [password,setPassword]=useState('');
       const login=()=>{
-        alert(email);
-        alert(password);
-        if(email == "vishnudhaya@gmail.com" || password == "12345"){
+        if(email == 'vishnudhaya4@gmail.com' && password =='12345'){
+          user.setLogged(true);
           history.push('/Feed');
         }
         else{
-          alert('Login Unsuccessful');
+          alert('Invalid Data');
         }
       //const data = { "email": email,"password": password};
 
@@ -30,6 +32,7 @@ export default function Login(){
           //  console.log(error);
        // });
     //}
+      }
     return(
         
       <div className="log-form d1">
