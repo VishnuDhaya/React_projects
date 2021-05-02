@@ -35,7 +35,7 @@ return(
             <form>
             <label for="exampleFormControlTextarea1"><h2>Feed</h2></label>
             <textarea className="form-control rounded-0 t1" id="exampleFormControlTextarea1" rows="1" onChange={(e)=>setInput(e.target.value)}></textarea><br/>
-            <button type="button" className="btn btn-danger" onClick={ () => addFeed() }>Add</button>
+            <button type="button" className="btn btn-success" onClick={ () => addFeed() }>Add</button>
             </form>
           </div>
           <div>{arrDisplay}</div>

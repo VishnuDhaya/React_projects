@@ -4,7 +4,6 @@ import React,{useContext} from "react";
 import Login from './Login';
 import {useHistory} from 'react-router-dom';
 import UserContext from './UserContext'; 
-import logo from './images/logo.png';
 
 function Header(props){
   const user=useContext(UserContext);
@@ -16,7 +15,7 @@ function Header(props){
   
         <img className="m1" src="https://image.shutterstock.com/image-illustration/lord-shiva-vector-260nw-1345243433.jpg" alt="logo"/>
     
-      
+    {user.isLogged &&
       <div className="container div_lord">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -32,30 +31,17 @@ function Header(props){
         <Link className="nav-link" to={"/Feed"}><button className="btn btn-sm btn-outline-white b1" type="button">Feed</button></Link>
         </li>
       </ul>
+      
+      <button className="btn btn-danger btn-sm btn-outline-white" type="button" onClick={()=> {user.setLogged(false); history.push('/Login')} }>Logout</button>
       </div>
-      <Link className="nav-link" to={"/Login"}><button className="btn btn-sm btn-outline-white" type="button">Login</button></Link>
-        <button className="btn btn-sm btn-outline-white b2" type="button" onClick={()=> {user.setLogged(false); history.push('/Login')} }>Logout</button>
+    }
+      <div className="div_footer">
+      {!user.islogged && 
+      <Link className="nav-link" to={"/Login"}><button className="btn btn-success btn-sm btn-outline-white b2" type="button">Login</button></Link>}
+      </div>
        
     </nav>
 
-
-
-      /*</nav><div>
-        <nav className="navbar navbar-dark indigo">
-          
-        <a className="navbar-brand" href="#">Intro by {user.fname}</a>
-        {user.isLogged &&
-        <form class="form-inline">
-            
-            
-            
-            
-            
-          }
-          {!user.islogged && }
-        </form>
-        </nav>
-        </div>*/
     );
 }
 export default Header;

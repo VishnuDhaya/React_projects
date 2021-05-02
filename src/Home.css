@@ -1,5 +1,6 @@
-.b1{
-    margin-right: 30px;
+*{
+    margin:0px;
+    padding:0px;
 }
 .bone
 {
@@ -21,7 +22,11 @@
 {
     margin-right: 50px;
 }
+.div_footer
+{
+        margin-right: 400px;    
+}
 .b2
 {
-    margin-right: 100px;;
+    margin-right: 300px;
 }

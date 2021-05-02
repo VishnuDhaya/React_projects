@@ -16,6 +16,8 @@ export default function Login(){
         }
         else{
           alert('Invalid Data');
+          setEmail('');
+          setPassword('');
         }
       //const data = { "email": email,"password": password};
 
